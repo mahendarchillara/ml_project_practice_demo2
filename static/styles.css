@@ -1,0 +1,113 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, red, orange, yellow, green, blue, indigo, violet);
+    background-size: 400% 400%;
+    animation: rainbow 10s ease infinite;
+    margin: 0;
+    padding: 0;
+}
+
+/* Rainbow Animation */
+@keyframes rainbow {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Container Styles */
+.container {
+    max-width: 700px;
+    margin-top: 50px;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styles */
+h1 {
+    color: #4a90e2; /* Light blue for the title */
+    font-size: 28px;
+    margin-bottom: 40px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+}
+
+/* Form Group Styles */
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    font-size: 16px;
+    color: #ff5722; /* Vibrant orange for field names */
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+.form-control {
+    font-size: 16px;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    transition: border 0.3s;
+}
+
+/* Focus on Input Fields */
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+/* Button Styles */
+button[type="submit"] {
+    background-color: #5d00ff;
+    color: #fff;
+    font-size: 18px;
+    padding: 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    text-align: center;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design for Mobile Screens */
+@media (max-width: 768px) {
+    .container {
+        margin-top: 20px;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    .form-group label {
+        font-size: 14px;
+    }
+
+    .form-control {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    button[type="submit"] {
+        font-size: 16px;
+        padding: 12px;
+    }
+}
